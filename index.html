@@ -6,6 +6,15 @@
     <title>Calculator</title>
     <link rel="icon" href="./assets/icon-192.png">
     <link rel="stylesheet" href="./index.css">
+
+    <script>
+
+        if ('serviceWorker' in navigator){
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
 </head>
 <body>
 
